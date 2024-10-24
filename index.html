@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GomezDev's To-Do List</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="list-name">My To-Do List</h1>
+        <input type="text" id="task-input" placeholder="Add a new task..." />
+        <input type="datetime-local" id="task-date" placeholder="Set a date and time" />
+        <button onclick="addTask()">Add Task</button>
+        
+        <ul id="task-list"></ul>
+
+        <div class="list-options">
+            <input type="text" id="list-name-input" placeholder="Enter List Name" />
+            <button onclick="renameList()">Rename List</button>
+            <button onclick="saveList()">Save List</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
