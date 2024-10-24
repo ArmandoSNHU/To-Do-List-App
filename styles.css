@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Soft blue gradient */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 12px;
     width: 400px;
@@ -40,13 +40,13 @@ input[type="datetime-local"] {
 
 input[type="text"]:focus,
 input[type="datetime-local"]:focus {
-    border-color: #2193b0; /* Highlight border on focus */
-    outline: none; /* Remove default outline */
+    border-color: #2193b0;
+    outline: none;
 }
 
 button {
     padding: 12px;
-    margin: 5px 0; /* Space above and below */
+    margin: 5px 0;
     background: #28a745;
     color: white;
     border: none;
@@ -54,7 +54,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.3s, transform 0.1s;
-    width: 100%; /* Full width */
+    width: 100%;
 }
 
 button:hover {
@@ -76,15 +76,15 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-    background: #f1f1f1; /* Light background for tasks */
+    background: #f1f1f1;
     margin-bottom: 12px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s; /* Smooth background change */
+    transition: background 0.3s;
 }
 
 li:hover {
-    background: #e0e0e0; /* Slight hover effect */
+    background: #e0e0e0;
 }
 
 li.completed .task-text {
@@ -107,4 +107,33 @@ li .timestamp {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 15px;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
 }
